@@ -3,23 +3,63 @@
 <head>
 	<meta charset="UTF-8">
 
-	<!-- CSS -->
+<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+<!-- FONTS -->
 
 	<title>Trivia Game!</title>
 
 </head>
 <body>
 	<header>
-		<h1><center>Trivia Game!</center></h1>
+		<h1>Trivia Game!</h1>
 	</header>
 
-	<button>Start!</button>
+<!-- GAME START -->
+	<div class="startTriviaGameButton">
+		<button class="button" id="gameStartButton">Start!</button>
+	</div>
 
-	<>
+<!-- TIMER -->
+	<div class="countdownTimer">
+		<h3 id="countdownTimeRemaining"></h3>
+	</div>
 
+<!-- QUESTIONS -->
+	<div class="questionSection">
+
+		<p class="question" id="questionOne">Q1</p>
+		<p class="answer" id="answerOne">A1</p>
+
+<!-- 		<p class="question" id="questionTwo">Q2</p>
+			<p class="answer" id="answerTwo">A2</p>
+
+		<p class="question" id="questionThree">Q3</p>
+			<p class="answer" id="answerThree">A3</p>
+
+		<p class="question" id="questionFour">Q4</p>
+			<p class="answer" id="answerFour">A4</p>
+
+		<p class="question" id="questionFive">Q5</p>
+			<p class="answer" id="answerFive">A5</p> -->
+
+	</div>
+
+
+
+<!-- GAME END (& RESTART) -->
+	<div class="endOfGame">
+		<h2 id="gameOver">Game over!</h2>
+		<p id="correctAnswerCount">Correctly Answered:</p>
+		<p id="incorrectAnswerCount">Incorrectly Answered:</p>
+		<p id="unansweredCount">Unanswered:</p>
+<!-- 		<button class="button" id="gameRestartButton">Restart Game</button> -->
+	</div>
+
+
+<!-- JAVASCRIPT & JQUERY -->
 	<script src="https://code.jquery.com/jquery-2.2.0.js"></script>
     <script src="assets/javascript/app.js"></script>
 
