@@ -29,9 +29,9 @@ p {
 }
 
 #gameOver {
+	font-family: 'Orbitron', sans-serif;
 	color: red;
 	font-size: 72px;
-/*	color:silver;*/
     text-shadow:
     4px 4px 1px #300000,
     4px 6px 1px #400000,
@@ -55,7 +55,6 @@ p {
 }
 
 /*START BUTTON*/
-/*http://css3buttongenerator.com/*/
 
 .button {
 	cursor:pointer;
