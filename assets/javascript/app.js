@@ -104,12 +104,8 @@ function triviaGameStart() {
 
     // var userAnswer = 0;
     // console.log(userAnswer)
+    // $("#answerOne").on("click", userAnswerValidation)
 
-  // $("#crystalOne").on("click", function(){
-  //   score = score + crystalOne;
-  //   $('#score').html('<h2> Your Total: <br>' + '<h1>' + score + '</h1>' + '</h2>');
-  //   winOrLose();
-  // });
 
     $("#questionOne").html(triviaQuestions[0].question);
     $('#answerOne').append('<button>' + triviaQuestions[0].answerChoices[i] + '</button>')
@@ -132,16 +128,19 @@ function triviaGameStart() {
 
 function userAnswerValidation() {
 
-  if (userAnswer === triviaQuestions[i].correctAnswer) {
+  if (userAnswer === triviaQuestions[0].correctAnswer) {
     userCorrectAnswers++
+    console.log(userCorrectAnswers);
   } 
 
-  else if (userAnswer !== triviaQuestions[i].correctAnswer) {
+  else if (userAnswer !== triviaQuestions[0].correctAnswer) {
     userIncorrectAnswers++
+    console.log(userIncorrectAnswers);
   }
 
   else {
     userUnanswered++
+    console.log(userUnanswered);
   }
 
 }
