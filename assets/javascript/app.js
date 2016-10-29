@@ -47,6 +47,8 @@ function preGame(){
 
 function startGame(){
 
+  triviaGameStart()
+
   counter = setInterval(decrement, 1000);
 
   $('.startTriviaGameButton').hide();
@@ -78,8 +80,16 @@ function stop(){
   clearInterval(counter);
 }
 
+preGame();
 
-// function triviaGameStart() {
+
+function triviaGameStart() {
+  console.log('does this work?')
+}
+
+// _______________________________________________________
+// _______________________________________________________
+
 
 // // var displayQuestion = $('<div>');
 // // $('.questionSection').append('<p>' + triviaQuestions[i].question + '</p>')
@@ -103,6 +113,5 @@ function stop(){
 //       // }
     
 //   }
-// }
 
-preGame();
+
