@@ -1,32 +1,34 @@
 var triviaQuestions = [
 
   {
-    question: "Question 1 Placeholder",
-    answerChoices: ["a", "b", "c", "d"],
-    correctAnswer: "c"
+    question: "How many years old is the universe?",
+    answerChoices: ["3 Trillion", "7.5 Trillion", "14 Billion", "Infinity?"],
+    correctAnswer: "14 Billion"
   },
   {
-    question: "Question 2 Placeholder",
-    answerChoices: ["a", "b", "c", "d"],
-    correctAnswer: "b"
+    question: "In what year was the first lunar landing?",
+    answerChoices: ["1989", "1969", "1955", "1999"],
+    correctAnswer: "1969"
   },
   {
-    question: "Question 3 Placeholder",
-    answerChoices: ["a", "b", "c", "d"],
-    correctAnswer: "d"
+    question: "What was the first living organism sent to space, from Earth?",
+    answerChoices: ["an American Chimp", "Your Mom", "Neil Armstrong", "a Russian Dog"],
+    correctAnswer: "a Russian Dog"
   },
   {
-    question: "Question 4 Placeholder",
-    answerChoices: ["a", "b", "c", "d"],
-    correctAnswer: "a"
+    question: "Is Time Travel possible?",
+    answerChoices: ["Yes", "Yes, but only forward", "Yes, but only backward", "No"],
+    correctAnswer: "Yes, but only forward"
   },
   {
-    question: "Question 5 Placeholder",
-    answerChoices: ["a", "b", "c", "d"],
-    correctAnswer: "a"
+    question: "Where does space start?",
+    answerChoices: ["The Karman Line", "The Van Allen Belt", "The Stratosphere", "After the first word, and before the second..."],
+    correctAnswer: "The Karman Line"
   }
 
 ];
+
+var userAnswer;
 
 var userCorrectAnswers = 0;
 var userIncorrectAnswers = 0;
@@ -36,10 +38,10 @@ var number = 10; // Remember to update this to 60
 
 
 // INTRO SCREEN
+$(document).ready(preGame());
+
 
 function preGame(){
-
-  number = 10; // Remember to update this to '60' // Bug: When game restarts, it decrements my increasing amounts, instead of by 1
 
   $('.startTriviaGameButton').show();
   $('.questionSection').hide();
@@ -50,7 +52,7 @@ function preGame(){
 
 }
 
-preGame();
+
 
 // BEGIN GAME
 
@@ -84,7 +86,6 @@ function decrement(){
 
     alert('Time Up!')
     stop();
-    preGame();
   
   }
 }
@@ -101,9 +102,17 @@ function triviaGameStart() {
 
   for (var i = 0; i < triviaQuestions[i].answerChoices.length; i++){
 
+    // var userAnswer = 0;
+    // console.log(userAnswer)
+
+  // $("#crystalOne").on("click", function(){
+  //   score = score + crystalOne;
+  //   $('#score').html('<h2> Your Total: <br>' + '<h1>' + score + '</h1>' + '</h2>');
+  //   winOrLose();
+  // });
+
     $("#questionOne").html(triviaQuestions[0].question);
     $('#answerOne').append('<button>' + triviaQuestions[0].answerChoices[i] + '</button>')
-
 
     $("#questionTwo").html(triviaQuestions[1].question);
     $('#answerTwo').append('<button>' + triviaQuestions[1].answerChoices[i] + '</button>')
@@ -121,34 +130,33 @@ function triviaGameStart() {
 }
 
 
+function userAnswerValidation() {
+
+  if (userAnswer === triviaQuestions[i].correctAnswer) {
+    userCorrectAnswers++
+  } 
+
+  else if (userAnswer !== triviaQuestions[i].correctAnswer) {
+    userIncorrectAnswers++
+  }
+
+  else {
+    userUnanswered++
+  }
+
+}
+
+
 // _______________________________________________________
 // _______________________________________________________
 
 
-// // var displayQuestion = $('<div>');
-// // $('.questionSection').append('<p>' + triviaQuestions[i].question + '</p>')
-
-// // $("#questionOne").html('<p>' + triviaQuestions.question[0] '</p>')
 
 //   for (var i = 0; i < triviaQuestions[i].answers.length; i++){
 
-//     var userAnswer = question.answers[i];
 
-//       if (userAnswer === triviaQuestions[i].correctAnswer) {
-//         userCorrectAnswers++
-//       }
 
-//       else if (userAnswer !== triviaQuestions[i].correctAnswer) {
-//         userIncorrectAnswers++
-//       }
 
-//       // else if (userAnswer === null) {
-//       //   userUnanswered++
-//       // }
     
 //   }
-
-    // var radioButton = document.createElement("INPUT");
-    // radioButton.setAttribute("type", "radio");
-    // document.body.appendChild(radioButton);
 
