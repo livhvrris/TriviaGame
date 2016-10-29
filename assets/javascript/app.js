@@ -79,28 +79,30 @@ function stop(){
 }
 
 
-function triviaGameStart() {
+// function triviaGameStart() {
 
-var displayQuestion = $('<div>');
-$('.questionSection').append('<p>' + triviaQuestions[i].question + '</p>')
+// // var displayQuestion = $('<div>');
+// // $('.questionSection').append('<p>' + triviaQuestions[i].question + '</p>')
 
-  for (var i = 0; i < triviaQuestions[i].answers.length; i++){
+// // $("#questionOne").html('<p>' + triviaQuestions.question[0] '</p>')
 
-    var userAnswer = question.answers[i];
+//   for (var i = 0; i < triviaQuestions[i].answers.length; i++){
 
-      if (userAnswer === triviaQuestions[i].correctAnswer) {
-        userCorrectAnswers++
-      }
+//     var userAnswer = question.answers[i];
 
-      else if (userAnswer !== triviaQuestions[i].correctAnswer) {
-        userIncorrectAnswers++
-      }
+//       if (userAnswer === triviaQuestions[i].correctAnswer) {
+//         userCorrectAnswers++
+//       }
 
-      // else if (userAnswer === null) {
-      //   userUnanswered++
-      // }
+//       else if (userAnswer !== triviaQuestions[i].correctAnswer) {
+//         userIncorrectAnswers++
+//       }
+
+//       // else if (userAnswer === null) {
+//       //   userUnanswered++
+//       // }
     
-  }
-}
+//   }
+// }
 
 preGame();
