@@ -91,9 +91,8 @@ function decrement(){
 }
 
 function stop(){
-
   clearInterval(counter);
-
+  endGame();
 }
 
 
@@ -145,17 +144,14 @@ function userAnswerValidation() {
 
 }
 
+function endGame() {
 
-// _______________________________________________________
-// _______________________________________________________
+  $('.questionSection').hide();
+  $('.countdownTimer').hide();
+  $('.endOfGame').show();
 
+  $('#correctAnswerCount').html('<p>Correctly Answered: ' + userCorrectAnswers + '</p>')
+  $('#incorrectAnswerCount').html('<p>Incorrectly Answered: ' + userIncorrectAnswers + '</p>')
+  $('#unansweredCount').html('<p>Unanswered: ' + userUnanswered + '</p>')
 
-
-//   for (var i = 0; i < triviaQuestions[i].answers.length; i++){
-
-
-
-
-    
-//   }
-
+}
