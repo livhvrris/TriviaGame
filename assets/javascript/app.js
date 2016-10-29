@@ -101,6 +101,8 @@ function triviaGameStart() {
 
   for (var i = 0; i < triviaQuestions[i].answerChoices.length; i++){
 
+    // NEED TO IMPLEMENT USER ANSWER VALIDATION
+    // NEED TO INDICATE IF BUTTON IS CLICKED OR CHANGE TO RADIO BUTTONS
     // var userAnswer = 0;
     // console.log(userAnswer)
     // $("#answerOne").on("click", userAnswerValidation)
