@@ -32,8 +32,10 @@ var userCorrectAnswers = 0;
 var userIncorrectAnswers = 0;
 var userUnanswered = 0;
 
-var number = 60;
+var number = 10; // Remember to update this to 60
 
+
+// INTRO SCREEN
 
 function preGame(){
 
@@ -45,9 +47,15 @@ function preGame(){
 
 }
 
+preGame();
+
+// BEGIN GAME
+
 function startGame(){
 
   triviaGameStart()
+
+  $('#countdownTimeRemaining').html('<h3>Time Remaining: 10 </h3>'); // Remember to update this to '60'
 
   counter = setInterval(decrement, 1000);
 
@@ -61,26 +69,25 @@ function startGame(){
 
 }
 
+// TIMER //
 
 function decrement(){
 
-  $('#countdownTimeRemaining').html('<h3>Time Remaining: ' + number + '</h3>');
-
   number--;
 
+  $('#countdownTimeRemaining').html('<h3>Time Remaining: ' + number + '</h3>');
+
   if (number === 0){
-    stop();
     alert('Time Up!')
+    stop();
   }
-
 }
-
 
 function stop(){
-  clearInterval(counter);
-}
 
-preGame();
+  clearInterval(counter);
+
+}
 
 
 function triviaGameStart() {
