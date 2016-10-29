@@ -99,24 +99,25 @@ function stop(){
 
 function triviaGameStart() {
 
-for (var i = 0; i < triviaQuestions[i].answerChoices.length; i++){
+  for (var i = 0; i < triviaQuestions[i].answerChoices.length; i++){
 
-  $("#questionOne").html(triviaQuestions[0].question);
-  $("#answerOne").html(triviaQuestions[0].answerChoices);
-  // $('#answerOne').append('<button>' + triviaQuestions[0].answerChoices + '</button>')
+    $("#questionOne").html(triviaQuestions[0].question);
+    $('#answerOne').append('<button>' + triviaQuestions[0].answerChoices[i] + '</button>')
 
-    // console.log(triviaQuestions[0].question);
-    // console.log(triviaQuestions[0].answerChoices);
 
-  $("#questionTwo").html(triviaQuestions[1].question);
+    $("#questionTwo").html(triviaQuestions[1].question);
+    $('#answerTwo').append('<button>' + triviaQuestions[1].answerChoices[i] + '</button>')
 
-  $("#questionThree").html(triviaQuestions[2].question);
+    $("#questionThree").html(triviaQuestions[2].question);
+    $('#answerThree').append('<button>' + triviaQuestions[2].answerChoices[i] + '</button>')
 
-  $("#questionFour").html(triviaQuestions[3].question);
+    $("#questionFour").html(triviaQuestions[3].question);
+    $('#answerFour').append('<button>' + triviaQuestions[3].answerChoices[i] + '</button>')
 
-  $("#questionFive").html(triviaQuestions[4].question);
+    $("#questionFive").html(triviaQuestions[4].question);
+    $('#answerFive').append('<button>' + triviaQuestions[4].answerChoices[i] + '</button>')
 
-};
+  };
 }
 
 
@@ -147,4 +148,7 @@ for (var i = 0; i < triviaQuestions[i].answerChoices.length; i++){
     
 //   }
 
+    // var radioButton = document.createElement("INPUT");
+    // radioButton.setAttribute("type", "radio");
+    // document.body.appendChild(radioButton);
 
