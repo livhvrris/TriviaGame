@@ -109,19 +109,19 @@ function triviaGameStart() {
 
 
     $("#questionOne").html(triviaQuestions[0].question);
-    $('#answerOne').append('<button>' + triviaQuestions[0].answerChoices[i] + '</button>')
+    $('#answerOne').append('<button class="answerButton">' + triviaQuestions[0].answerChoices[i] + '</button>')
 
     $("#questionTwo").html(triviaQuestions[1].question);
-    $('#answerTwo').append('<button>' + triviaQuestions[1].answerChoices[i] + '</button>')
+    $('#answerTwo').append('<button class="answerButton">' + triviaQuestions[1].answerChoices[i] + '</button>')
 
     $("#questionThree").html(triviaQuestions[2].question);
-    $('#answerThree').append('<button>' + triviaQuestions[2].answerChoices[i] + '</button>')
+    $('#answerThree').append('<button class="answerButton">' + triviaQuestions[2].answerChoices[i] + '</button>')
 
     $("#questionFour").html(triviaQuestions[3].question);
-    $('#answerFour').append('<button>' + triviaQuestions[3].answerChoices[i] + '</button>')
+    $('#answerFour').append('<button class="answerButton">' + triviaQuestions[3].answerChoices[i] + '</button>')
 
     $("#questionFive").html(triviaQuestions[4].question);
-    $('#answerFive').append('<button>' + triviaQuestions[4].answerChoices[i] + '</button>')
+    $('#answerFive').append('<button class="answerButton">' + triviaQuestions[4].answerChoices[i] + '</button>')
 
   };
 }
