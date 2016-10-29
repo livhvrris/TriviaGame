@@ -39,9 +39,12 @@ var number = 10; // Remember to update this to 60
 
 function preGame(){
 
-  $(".questionSection").hide();
-  $(".countdownTimer").hide();
-  $(".endOfGame").hide();
+  number = 10; // Remember to update this to '60' // Bug: When game restarts, it decrements my increasing amounts, instead of by 1
+
+  $('.startTriviaGameButton').show();
+  $('.questionSection').hide();
+  $('.countdownTimer').hide();
+  $('.endOfGame').hide();
 
   $('#gameStartButton').on('click', startGame);
 
@@ -78,8 +81,11 @@ function decrement(){
   $('#countdownTimeRemaining').html('<h3>Time Remaining: ' + number + '</h3>');
 
   if (number === 0){
+
     alert('Time Up!')
     stop();
+    preGame();
+  
   }
 }
 
