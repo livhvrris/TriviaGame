@@ -1,6 +1,5 @@
 /* GENERAL */
 body {
-	background-image: url(Galaxy.jpg);
 	text-align: center;
 }
 
@@ -11,36 +10,79 @@ h1 {
 	padding-bottom: 100px;
 }
 
+h2 {
+	margin-top: -50px;
+	margin-bottom: 50px;
+	font-family: 'Orbitron', sans-serif;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+h3 {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 20px;
+}
+
+p {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 14px;
+}
+
+#gameOver {
+	color: red;
+	font-size: 72px;
+/*	color:silver;*/
+    text-shadow:
+    4px 4px 1px #300000,
+    4px 6px 1px #400000,
+    4px 8px 1px #500000,
+    4px 10px 1px #600000,
+    4px 12px 1px #700000,
+    4px 14px 1px #800000,
+    4px 16px 1px #900000,
+    4px 18px 1px #A00000,
+    4px 20px 1px #B00000,
+    4px 22px 1px #C00000,
+    4px 24px 1px #D00000,
+    4px 26px 1px #E00000,
+    4px 28px 1px #F00000,
+    4px 30px 1px #FA0000,
+    4px 32px 1px #FB0000,
+    4px 34px 1px #FC0000,
+    4px 36px 1px #FD0000,
+    4px 38px 1px #FE0000,
+    4px 40px 2px #FF0000;
+}
 
 /*START BUTTON*/
 /*http://css3buttongenerator.com/*/
 
-.btn {
-  margin-top: 150px;
-  background: #3498db;
-  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
-  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
-  background-image: -o-linear-gradient(top, #3498db, #2980b9);
-  background-image: linear-gradient(to bottom, #3498db, #2980b9);
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0px;
-  font-family: Courier New;
-  color: #ffffff;
-  font-size: 36px;
-  background: #adadad;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
+.button {
+	cursor:pointer;
+	width: 200px;
 }
 
-.btn:hover {
-  background: #eb0e0e;
-  text-decoration: none;
+.button:hover {
 }
 
+/* QUESTIONS, ANSWERS, & RESULTS */
 
-/*BACKGROUND*/
+.question {
+	padding-top: 10px;
+}
+
+.answer {
+	padding-top: 15px;
+	padding-bottom: 30px;
+}
+
+.results {
+	padding-top: 15px;
+	padding-bottom: 30px;	
+}
+
+/*BACKGROUND
+
 /* ============================================================================================== 
 Nick Mkrtchyan
 http://www.facebook.com/sonick.pk

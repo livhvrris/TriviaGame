@@ -11,16 +11,12 @@
 
 <!-- FONTS -->
 	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 
 	<title>Space Race - Trivia Game!</title>
 
 </head>
 <body>
-
-<!-- 	FOR BACKGROUND -->
-<!-- 	<div class="stars"></div>
-	<div class="twinkling"></div>
-	<div class="clouds"></div> -->
 
 	<header>
 		<h1>Space Race - Trivia Game!</h1>
@@ -28,12 +24,13 @@
 
 <!-- GAME START -->
 	<div class="startTriviaGameButton">
-		<button class="btn" id="gameStartButton">Start!</button>
+		<img class="button" id="gameStartButton" src="assets/images/mship1.png" alt="Start!"></img>
+		<h3>Click to Start!</h3>
 	</div>
 
 <!-- TIMER -->
 	<div class="countdownTimer">
-		<h3 id="countdownTimeRemaining"></h3>
+		<h2 id="countdownTimeRemaining"></h2>
 	</div>
 
 <!-- QUESTIONS -->
@@ -61,16 +58,21 @@
 <!-- GAME END (& RESTART) -->
 	<div class="endOfGame">
 		<h2 id="gameOver">Game over!</h2>
-		<p id="correctAnswerCount">Correctly Answered:</p>
-		<p id="incorrectAnswerCount">Incorrectly Answered:</p>
-		<p id="unansweredCount">Unanswered:</p>
+		<p class="results" id="correctAnswerCount">Correctly Answered:</p>
+		<p class="results" id="incorrectAnswerCount">Incorrectly Answered:</p>
+		<p class="results" id="unansweredCount">Unanswered:</p>
 <!-- 		<button class="button" id="gameRestartButton">Restart Game</button> -->
 	</div>
 
+<!-- 	FOR BACKGROUND -->
+	<div class="stars"></div>
+	<div class="twinkling"></div>
+	<div class="clouds"></div>
 
 <!-- JAVASCRIPT & JQUERY -->
 	<script src="https://code.jquery.com/jquery-2.2.0.js"></script>
     <script src="assets/javascript/app.js"></script>
 
 </body>
+
 </html>
