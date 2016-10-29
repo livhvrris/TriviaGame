@@ -1,27 +1,27 @@
 var triviaQuestions = [
 
   {
-    question: "Question 1",
+    question: "Question 1 Placeholder",
     answerChoices: ["a", "b", "c", "d"],
     correctAnswer: "c"
   },
   {
-    question: "Question 2",
+    question: "Question 2 Placeholder",
     answerChoices: ["a", "b", "c", "d"],
     correctAnswer: "b"
   },
   {
-    question: "Question 3",
+    question: "Question 3 Placeholder",
     answerChoices: ["a", "b", "c", "d"],
     correctAnswer: "d"
   },
   {
-    question: "Question 4",
+    question: "Question 4 Placeholder",
     answerChoices: ["a", "b", "c", "d"],
     correctAnswer: "a"
   },
   {
-    question: "Question 5",
+    question: "Question 5 Placeholder",
     answerChoices: ["a", "b", "c", "d"],
     correctAnswer: "a"
   }
@@ -90,9 +90,29 @@ function stop(){
 }
 
 
+
 function triviaGameStart() {
-  console.log('does this work?')
+
+for (var i = 0; i < triviaQuestions[i].answerChoices.length; i++){
+
+  $("#questionOne").html(triviaQuestions[0].question);
+  $("#answerOne").html(triviaQuestions[0].answerChoices);
+  // $('#answerOne').append('<button>' + triviaQuestions[0].answerChoices + '</button>')
+
+    // console.log(triviaQuestions[0].question);
+    // console.log(triviaQuestions[0].answerChoices);
+
+  $("#questionTwo").html(triviaQuestions[1].question);
+
+  $("#questionThree").html(triviaQuestions[2].question);
+
+  $("#questionFour").html(triviaQuestions[3].question);
+
+  $("#questionFive").html(triviaQuestions[4].question);
+
+};
 }
+
 
 // _______________________________________________________
 // _______________________________________________________
